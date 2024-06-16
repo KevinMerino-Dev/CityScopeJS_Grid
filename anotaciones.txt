@@ -28,7 +28,7 @@ longitude
 
 cell size
 50
-. q rtttttrr
+
 {
   "type": "FeatureCollection",
   "name": "POLYGON",
