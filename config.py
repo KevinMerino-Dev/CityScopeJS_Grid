@@ -1,0 +1,21 @@
+color_dict = {
+    'SITIO ERIAZO': '#E57373',
+    'HABITACIONAL': '#81C784',
+    'EDUCACION Y CULTURA': '#64B5F6',
+    'BODEGA Y ALMACENAJE': '#F06292',
+    'BIENES COMUNES': '#DCE775',
+    'OTROS': '#4DD0E1',
+    'INDUSTRIA': '#BA68C8',
+    'SALUD': '#FFB74D',
+    'CULTO': '#9575CD',
+    'OFICINA': '#AED581',
+    'COMERCIO': '#F48FB1',
+    'TRANSPORTE Y TELEC': '#B0BEC5',
+    'AREAS VERDES': '#4CAF50',
+    'DEPORTE Y RECREACION': '#7986CB',
+    'HOTEL, MOTEL': '#F06292',
+    'ESTACIONAMIENTO': '#00ACC1',
+    'ADM PUBLICA Y DEFENSA': '#EF5350',
+    'AGRICOLA': '#8BC34A',
+    'S/I': '#D3D3D3'  # Color gris claro para 'S/I'
+}
