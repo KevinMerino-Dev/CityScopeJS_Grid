@@ -54,11 +54,13 @@ class MicroBrix():
 
         if(not self.quietly):
             websocket.enableTrace(True)
-        self.ws = websocket.WebSocketApp( self.cityIO_wss,
+        self.ws = websocket.WebSocketApp(
+            self.cityIO_wss,
             on_open=self.on_open,
             on_message=self.on_message,
             on_error=self.on_error,
-            on_close=self.on_close)
+            on_close=self.on_close
+            )
 
     def on_message(self, ws, message):
         dict_rec = json.loads(message)
@@ -101,12 +103,12 @@ class MicroBrix():
 
     def threaded_function(self,table_name):
         if(self.keep_updating):
-                while True:
-                    try:
-                        sleep(self.update_interval)
-                        self.perform_update(table_name)
-                    except:
-                        continue
+            while True:
+                try:
+                    sleep(self.update_interval)
+                    self.perform_update(table_name)
+                except:
+                    continue
 
     def _send_indicators(self, layers, numeric, table):
         if(layers is not None and numeric is not None):
