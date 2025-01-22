@@ -2,7 +2,8 @@ scipy
 numpy
 cs-brix
 rel
-pandas==1.5.3
+# pandas==1.5.3
+pandas
 matplotlib
 scikit-learn
 seaborn

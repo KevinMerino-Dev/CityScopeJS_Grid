@@ -1,0 +1,10 @@
+python-multipart
+fastapi
+uvicorn
+matplotlib
+geopandas
+pandas
+shapely
+jsonschema
+requests
+

@@ -11,7 +11,7 @@ services:
       - "9876:9876"
     volumes:
       # - ./assets:/app/assets
-      # - ./data:/app/data
+      - ./data:/app/data
       - ./scripts:/app/scripts
     networks:
       - cityscope
@@ -19,12 +19,24 @@ services:
   indicator-api:
     container_name: indicator_api
     build:
-      context: ./IndicatorAPI
+      context: ./indicator-API
     restart: always
     ports:
       - "9875:9875"  # Puerto para la API de indicadores
     volumes:
-      - ./IndicatorAPI:/app
+      - ./indicator-API:/app
     networks:
       - cityscope
 
+  gridmaker:
+    container_name: grid_maker
+    build:
+      context: ./grid-maker
+      target: development
+    restart: always
+    ports:
+      - "5173:5173"
+    volumes:
+      - ./grid-maker:/app
+    networks:
+      - cityscope
