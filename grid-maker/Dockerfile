@@ -11,7 +11,7 @@ COPY . .
 
 EXPOSE 5173
 
-CMD ["npm", "run", "dev", "--", "--host"]
+CMD ["npm", "run", "start"]
 
 # Production Dockerfile
 FROM node:18-alpine AS builder

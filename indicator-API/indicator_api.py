@@ -158,7 +158,9 @@ async def update_layer():
 
 class IndicatorLayerRequest(BaseModel):
     layer_id: str
+    #layer_type: str .format= "geojson" #se cambio a la línea de abajo
     layer_type: str = "geojson"
+    #layer_type: Literal["geojson", "parquet", "vector"]="geojson"
 
 @app.post("/add_indicator_layer/")
 async def add_indicator_layer(request: IndicatorLayerRequest):
