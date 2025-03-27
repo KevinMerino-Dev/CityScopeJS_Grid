@@ -1,0 +1,22 @@
+scipy
+numpy
+cs-brix
+rel
+# pandas==1.5.3
+pandas
+matplotlib
+scikit-learn
+seaborn
+geopandas
+contextily
+osmnx
+networkx
+jupyter
+ipykernel
+pandana
+osmnet
+openpyxl
+pyarrow
+h3
+python-geohash
+imageio
